@@ -73,7 +73,6 @@ EV.7.4.2 Cell Voltage levels must stay inside the permitted minimum and maximum 
 EV.7.4.3 All voltage sense wires to the BMS must meet one of:
 
 1. Have Overcurrent Protection EV.7.4.4 below
-2. Meet requirements for no Overcurrent Protection (Could not find reference in document)
 
 EV.7.4.4 When used, Overcurrent Protection for the BMS voltage sense wires must meet the two:
 
@@ -136,18 +135,19 @@ EV.6.6.5 Battery packs with Low Voltage or non voltage rated fusible links for c
 
 **Critical Requirements**
 
-1. Ensure cells stay between x and y Volts.
-2. Ensure cells stay below x degrees Celsius.
-3. Monitor for loss of communication and wire faults. -> How, what sensors does this information come from?
-4. Include a watchdog timer: Will be reset periodically while the BMS system is monitoring reliably, else if it expires it initiates shut down protocol.
+1. Ensure cells stay between 3.0 and 4.2 Volts.
+2. Ensure cells stay below 60 degrees Celsius.
+3. Monitor for loss of communication between BMS slaves and host.
+4. Monitor for open wire faults.
+5. Include a watchdog timer: Will be reset periodically while the BMS system is monitoring reliably, else if it expires it initiates shut down protocol.
 
 **Communication Protocol: CAN bus**
 
 **Major Software Functions:**
 
-1. The BMS should be receiving inputs from voltage and temp sensors and watchdog timer and triggering the shutdown protocol if anything is off.
+1. The BMS should be receiving inputs from voltage and temp sensors and watchdog timer, and triggering the shutdown protocol if anything is off.
 2. Periodically kick the watchdog
-3. Communicate via CAN bus to the shutdown circuit and dash board (red light)
+3. Communicate via CAN bus to the shutdown circuit and dashboard (red light)
 4. Balancing the voltage of different cells in the pack so that it is as close to equal as possible.
 
-Figure : BMS_Context_Diagram
+Figure: BMS_Context_Diagram
