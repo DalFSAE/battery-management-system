@@ -2,7 +2,7 @@ Battery Management System Related Rules
 
 Provided Definition: [Battery management system - Wikipedia](https://en.wikipedia.org/wiki/Battery_management_system)
 
-**EV.7 SHUTDOWN SYSTEM**
+## **EV.7 SHUTDOWN SYSTEM**
 
 **EV.7.1 Shutdown Circuit**
 
@@ -121,9 +121,9 @@ Soldering wires to the cells for the voltage monitoring input of the BMS is perm
 EV.5.11.5 The Tractive System Status Indicator must show when the GLV System is energized:
 
 | Condition | Green Light | Red Light |
-| --- | --- | --- |
-| No Faults | Always ON | OFF |
-| Fault in one of the two:<br><br>BMS EV.7.3.5 or IMD EV.7.6.5 | OFF | Flash<br><br>2Hz – 5Hz, 50% duty cycle |
+| ---       | ---         | ---       |
+| No Faults | Always ON   | OFF       |
+| Fault in one of the two: BMS EV.7.3.5 or IMD EV.7.6.5 | OFF | Flash2Hz – 5Hz, 50% duty cycle |
 
 **EV.6.6 Overcurrent Protection**
 
@@ -150,4 +150,6 @@ EV.6.6.5 Battery packs with Low Voltage or non voltage rated fusible links for c
 3. Communicate via CAN bus to the shutdown circuit and dashboard (red light)
 4. Balancing the voltage of different cells in the pack so that it is as close to equal as possible.
 
-Figure: BMS_Context_Diagram
+Figure: 
+
+![Image](\assets\BMS-ContextDiagram.png)
