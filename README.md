@@ -4,16 +4,16 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/DalFSAE/high-voltage-controller">
+  <a href="https://github.com/DalFSAE/battery-management-system">
     <img src="images/dms_logo.jpg" alt="Logo" width="500" height="200">
   </a>
 
-<h3 align="center">DalFSAE High Voltage Controller</h3>
+<h3 align="center">DalFSAE Battery Management System </h3>
   <p align="center">
     STM32-based firmware for the Driver Monitoring System's High Voltage Controller.
     Developed by the Dalhousie Formula SAE EV Team.
     <br />
-    <a href="https://github.com/DalFSAE/high-voltage-controller/"><strong>Explore the project »</strong></a>
+    <a href="https://github.com/DalFSAE/battery-management-system"><strong>Explore the project »</strong></a>
     <br />
   </p>
 </div>
