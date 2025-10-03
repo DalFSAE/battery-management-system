@@ -10,7 +10,18 @@
 
 ### Hardware Requirements
 
+- Must use the ADBMS3680B, and related components.
+- Must meet FSAE 2026 latest ruleset.
+
 ### Software Requirements
+
+- Must meet FSAE 2026 latest ruleset.
+- Must use STM32 microcontroller.
+- Software watchdog
+- Constant voltage and temperature monitoring. 
+- Individual cell balancing algorithm.
+- CAN communication and data logging.
+
 
 ## Related Rules
 
