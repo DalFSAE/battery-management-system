@@ -7,7 +7,7 @@
 - Eliminate the need for a large, commercial BMS, improve design flexibility 
 
 ## Design Requirements
-
+- Smaller PCB size
 ### Hardware Requirements
 
 - Must use the ADBMS3680B, and related components.
